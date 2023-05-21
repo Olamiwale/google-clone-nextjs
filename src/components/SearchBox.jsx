@@ -1,10 +1,12 @@
 'use client'
 
 import React, {useState} from 'react'
+import Link from 'next/link';
 import { useSearchParams, useRouter } from 'next/navigation'
 import { RxCross2 } from "react-icons/rx";
 import { BsFillMicFill } from "react-icons/bs";
 import { AiOutlineSearch } from "react-icons/ai";
+import SearchHeader from './SearchHeader';
 
 export default function SearchBox() {
 
@@ -19,9 +21,14 @@ export default function SearchBox() {
   }
 
   return (
+    <div className='border-b-2'> 
     <div className='flex items-center mt-10'>
       <div className='px-4'>
+        <Link href='/'> 
         <img width='90px' height='50px' src='https://www.freepnglogos.com/uploads/google-logo-png-hd-11.png'/>
+        </Link>
+        
+       
       </div> 
     <form
       className="flex border border-gray-200 rounded-full shadow-lg px-6 py-3 ml-8 mr-5 flex-grow max-w-3xl items-center"
@@ -48,6 +55,10 @@ export default function SearchBox() {
      
     </form>
 
+   
     </div>
+
+ <SearchHeader />
+  </div>
   )
 }

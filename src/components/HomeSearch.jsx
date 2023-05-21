@@ -58,11 +58,11 @@ export default function HomeSearch() {
       
       
        <div className="flex justify-center space-x-6 m-5">
-         <button onClick={handleSubmit} className ='border p-4 w-[150px]'>Google Search</button>
+         <button onClick={handleSubmit} className ='border p-4 w-[140px]'>Google Search</button>
     <button 
     disabled={ranSearchLoading}
     onClick={ranSearch} 
-    className ='border p-4 w-[150px] justify-center flex'>
+    className ='border p-4 w-[140px] justify-center flex'>
       {ranSearchLoading ? 
      
      ( <img src="Spinner.gif" alt='loading ' className="h-8"/>)
